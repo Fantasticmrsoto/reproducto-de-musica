@@ -1,2 +1,71 @@
+*{
+    box-sizing: border-box;
+    color: black; 
+    font-size: 1.1rem;
+    font-weight: 400;
+    text-decoration: none;
+    outline: none;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    outline: none;
+}
+body {
+    color: #f2f2f2;
+    background-color: #151515;
+     
+    background-size: 100%;
+    
+    background-repeat: repeat-y;
+}
 
+.navbar__nav__list{
 
+    display: flex;
+    flex-direction: column;
+}
+.navbar__nav__icons {
+    background-color: #151515;
+    color: #f2f2f2;
+} 
+.navbar__nav__title{
+    color: #f2f2f2;
+    font-weight: bold;
+    font-size: 32px;
+    padding: 15px;
+}
+ .main__tracklist {
+    display: flex;
+    flex-direction: column;
+    
+ }   
+.footer{
+    
+    padding: 16px ;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    
+
+}
+.footer__botons {
+    align-items: center;
+    display: flex;
+    justify-content: left;
+    color: #f2f2f2;
+    gap: 100px;
+    
+}
+.footer__txt {
+    color: #f2f2f2;
+}
+.footer__img {
+    width: 100px;
+    height: 100px;
+    border-radius: 20px;
+    
+}
+.footer__icons {
+    background: none;
+    
+}

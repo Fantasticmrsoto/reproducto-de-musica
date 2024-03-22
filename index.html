@@ -5,25 +5,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>mini reproductor</title>
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="description" content="Aquí encontraras la mejor">
+    <meta name="description" content="Aquí encontraras la mejor musica">
     <meta name="author" content="Leonel">
     <meta name="language" content="es">
+    <link rel="stylesheet" href="/styles.css">
     <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/181/181668.png">
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    
 
 </head>
 
 <body>
     <header class="navbar">
-        <nav>
-            <ul>
-                <li>
-                    <button>
-                       
+        <nav class="navbar__nav">
+            <ul class="navbar__nav__list">
+                <li >
+                    <button class="navbar__nav__icons" >
+                       <img src="/iconos/home.png" alt="icono con forma de casa" >
+                        Home
                     </button>
                 </li>
-                <li>
-
+                <li >
+                    <button class="navbar__nav__icons">
+                        <img src="/iconos/search.png" alt="icono con forma de lupa"> 
+                        Buscar
+                    </button>
+                </li>
+                <li >
+                    <button class="navbar__nav__icons">
+                        <img src="/iconos/heart.png" alt="icono con forma de corazon"> 
+                        Me gustan
+                    </button>
+                </li>
+                <li class="navbar__nav__icons">
+                    <h2 class="navbar__nav__title">
+                      Playlist  
+                    </h2>  
+                        
+                </button class="navbar__nav__icons"> 
+                <img src="/iconos/playlist.png" alt="">
+                Crear Playlist
+                <button>
+            
                 </li>
 
             </ul>
@@ -31,10 +54,29 @@
         
     </header>
 
-    <main class="bg-neutral-700 px-16 py-8 gap-4 flex flex+col" id="track-list">
-
+    <main class="main__tracklist" id="track-list">
+        
     </main>
 
-    <footer></footer>
+    <footer class="footer">
+        <div class="footer__botons">
+            <img src="" alt="" id="current-song-img" class="footer__img">
+            <h3 id="current-song-title" class="footer__txt"></h3>
+            <h4 id="current-song-author" class="footer__txt"></h4>
+            <button class="footer__icons">
+                <img src="/iconos/atras.png" alt="">
+            </button>
+            <button class="footer__icons">
+                <img src="/iconos/play.png" alt="">
+            </button>
+            <button class="footer__icons">
+                <img src="/iconos/siguiente.png" alt="">
+            </button>
+            
+            <audio id="current-song-audio" src=""controls autoplay></audio id>
+        </div>
+    </footer>
+
+    <script src="/script.js"></script>
 </body>
 </html>
